@@ -1,0 +1,17 @@
+# ── Private folders — NEVER push these to GitHub ──
+09-Career-Private/
+10-DHS-Internship-Private/
+
+# ── Obsidian workspace settings (personal, not portable) ──
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Temp files ──
+*.tmp
+*.log
