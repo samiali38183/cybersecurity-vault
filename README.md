@@ -24,5 +24,5 @@ CompTIA Security+ | AWS Cloud Practitioner | CCNA (in progress)
 - Expanding HTB write-up library
 
 ## Connect
-- LinkedIn: linkedin.com/in/[your-handle]
+- LinkedIn: http://linkedin.com/in/samiali2444
 - GitHub: github.com/samiali38183
