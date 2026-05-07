@@ -25,4 +25,3 @@ CompTIA Security+ | AWS Cloud Practitioner | CCNA (in progress)
 
 ## Connect
 - LinkedIn: http://linkedin.com/in/samiali2444
-- GitHub: github.com/samiali38183
