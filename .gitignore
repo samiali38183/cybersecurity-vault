@@ -2,6 +2,12 @@
 09-Career-Private/
 10-DHS-Internship-Private/
 
+# ── Personal planning docs — stay local only ──
+00-Dashboard/Master-Roadmap.md
+00-Dashboard/Skills-Validation-Matrix.md
+00-Dashboard/Week-*-Plan.md
+00-Dashboard/Daily-Notes/
+
 # ── Obsidian workspace settings (personal, not portable) ──
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
