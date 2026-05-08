@@ -38,11 +38,11 @@ This repository contains my **portfolio work** — original CTF write-ups, secur
 
 ## Areas of Focus
 
-- **Vulnerability Management** — applied work via DHS / CBP. CVSS, EPSS, CISA KEV, prioritization workflows, federal-scale scanning operations.
-- **Detection Engineering** — Splunk SPL and Sentinel KQL queries, Sigma rule authoring, MITRE ATT&CK mapping.
-- **Cloud Security** — AWS IAM, CloudTrail, GuardDuty, Security Hub, S3 controls. Azure Sentinel and Defender exposure.
-- **Active Directory & Windows Internals** — authentication flows, common attack paths, event log analysis.
-- **Security Automation** — Python tooling for log parsing, IOC enrichment, control validation.
+- **Vulnerability Management** — applied work via DHS / CBP. Hands-on with enterprise scanning, CVSS triage, CISA KEV-aware prioritization, NIST 800-53 control context.
+- **Networking & Network Security** — TCP/IP, routing & switching, subnetting, packet analysis. CCNA-aligned depth.
+- **Cloud Foundations** — AWS Cloud Practitioner certified; building toward Solutions Architect Associate and Security Specialty.
+- **Detection Engineering** — building practical depth in Splunk SPL, Sentinel KQL, Sigma rules, and MITRE ATT&CK mapping through structured lab work.
+- **Security Automation** — Python tooling for log parsing, IOC enrichment, and control validation (in active development).
 
 ---
 
@@ -84,13 +84,21 @@ Endpoint and network support for a healthcare operations team — workstation pr
 
 ## Technical Stack
 
-**Vulnerability Management:** Nessus · CVSS · EPSS · CISA KEV · prioritization workflows
-**SIEM / Detection:** Splunk SPL · Microsoft Sentinel KQL · Sigma · MITRE ATT&CK
-**Cloud Security:** AWS — IAM, CloudTrail, GuardDuty, Security Hub, S3 · Azure Sentinel · Defender
-**Languages:** Python · Bash · PowerShell · SQL fundamentals
-**Networking:** TCP/IP · routing & switching · subnetting · packet analysis (Wireshark)
-**Operating Systems:** Linux (Ubuntu, Kali) · Windows (incl. Active Directory)
-**Frameworks:** NIST 800-53 · NIST 800-61 · CIS Controls · OWASP Top 10
+### Working Knowledge
+**Vulnerability Management:** enterprise scanning workflows · CVSS triage · CISA KEV · prioritization
+**Networking:** TCP/IP · OSI model · subnetting · routing & switching · VLANs · ACLs
+**Operating Systems:** Linux (Ubuntu) · Windows (workstation administration)
+**Cloud:** AWS core services (IAM, EC2, S3, VPC fundamentals) — AWS CCP certified
+**Security Foundations:** Sec+ domains — risk management, identity and access, cryptography basics, common controls and frameworks (NIST CSF, NIST 800-53 awareness)
+**Productivity:** Microsoft 365 · Google Workspace · Git/GitHub · Markdown documentation
+
+### Currently Building
+**SIEM / Detection:** Splunk SPL · Microsoft Sentinel KQL · Sigma rule authoring · MITRE ATT&CK mapping
+**Cloud Security:** AWS Solutions Architect Associate path → AWS Security Specialty
+**Active Directory:** Kerberos / NTLM auth flows · attack paths · Windows Event Log analysis
+**Languages:** Python (security tooling focus) · Bash · PowerShell
+**Packet Analysis:** Wireshark
+**Frameworks:** NIST 800-61 IR Lifecycle · CIS Controls v8 · OWASP Top 10
 
 ---
 
