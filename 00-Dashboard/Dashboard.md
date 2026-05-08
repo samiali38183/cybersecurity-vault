@@ -9,8 +9,15 @@ tags: [dashboard, moc]
 
 ---
 
+## 🚀 Action Center
+- 📍 **This week's plan →** [[Week-01-Plan|Week 1 — Foundation Kickoff]]
+- 🗺️ **12-month roadmap →** [[Master-Roadmap]]
+- 🎯 **Skills validation tracker →** [[Skills-Validation-Matrix]]
+
+---
+
 ## 🎯 Current Focus
-- **Phase:** 
+- **Phase:** Month 1 — Foundation Solidification
 - **Active Cert:** CCNA (in progress)
 - **Next Cert:** AWS Solutions Architect Associate
 - **Active Platform:** 
