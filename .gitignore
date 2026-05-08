@@ -1,12 +1,36 @@
-# ── Private folders — NEVER push these to GitHub ──
+# ============================================================
+# Public repo = portfolio OUTPUT only.
+# Anything that's prep / study / personal / process stays LOCAL.
+# ============================================================
+
+# ── Personal / sensitive ──
 09-Career-Private/
 10-DHS-Internship-Private/
 
-# ── Personal planning docs — stay local only ──
-00-Dashboard/Master-Roadmap.md
-00-Dashboard/Skills-Validation-Matrix.md
-00-Dashboard/Week-*-Plan.md
-00-Dashboard/Daily-Notes/
+# ── All planning, dashboards, daily process work ──
+00-Dashboard/
+
+# ── Study / prep folders (study notes, not portfolio output) ──
+01-Phase-0-3-Foundation/
+02-Phase-3-6-SOC-Skills/
+03-Phase-6-12-Specialization/
+04-Phase-12-24-Advanced/
+05-Certifications/
+06-Labs-and-Platforms/
+
+# ── Obsidian internal state ──
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# ── OS junk ──
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Temp ──
+*.tmp
+*.log
 
 # ── Obsidian workspace settings (personal, not portable) ──
 .obsidian/workspace.json

@@ -16,11 +16,11 @@
 
 ## Profile
 
-Cybersecurity professional working on the **Department of Homeland Security / U.S. Customs and Border Protection Vulnerability Assessment Team** through the **HS-POWER program**. Focused on enterprise vulnerability management, detection engineering, and cloud security with a clear path toward a **Security Engineer** role.
+Cybersecurity professional working with the **Department of Homeland Security / U.S. Customs and Border Protection Vulnerability Assessment Team** through the **HS-POWER program**. Focused on enterprise vulnerability management, detection engineering, and cloud security with a clear path toward a **Security Engineer** role.
 
-Currently maintaining a 3.65 GPA at Northern Virginia Community College with four consecutive Dean's List recognitions, on track to transfer to **George Mason University** through the Mason Advance Program in 2026.
+Maintaining a 3.65 GPA at Northern Virginia Community College with four consecutive Dean's List recognitions, on track to transfer to **George Mason University** through the Mason Advance Program in 2026.
 
-This repository is my technical knowledge base — study materials, lab methodology, detection content, and reference documentation built and maintained as a working professional asset.
+This repository contains my **portfolio work** — original CTF write-ups, security tooling, and detection content.
 
 ---
 
@@ -31,7 +31,7 @@ This repository is my technical knowledge base — study materials, lab methodol
 | **CompTIA Security+** (CE) | ✅ Active |
 | **AWS Certified Cloud Practitioner** | ✅ Active |
 | **Cisco CCNA** | 🔄 In progress — target Q3 2026 |
-| **DHS HS-POWER Program** — Vulnerability Assessment, CBP | ✅ Active intern |
+| **DHS HS-POWER Program** — Vulnerability Assessment Intern, CBP | ✅ Active |
 | **Mason Advance Program** — guaranteed transfer to GMU | ✅ Active |
 
 ---
@@ -46,17 +46,16 @@ This repository is my technical knowledge base — study materials, lab methodol
 
 ---
 
-## Repository Structure
+## Portfolio
 
-| Path | Purpose |
-|------|---------|
-| [`00-Dashboard/`](./00-Dashboard) | Living dashboard tracking certifications, projects, and learning velocity |
-| [`01–04 Phase folders`](./) | Structured technical knowledge base by skill domain |
-| [`05-Certifications/`](./05-Certifications) | Per-certification study materials and exam prep |
-| [`06-Labs-and-Platforms/`](./06-Labs-and-Platforms) | Methodology notes from HackTheBox, TryHackMe, LetsDefend, CyberDefenders |
-| [`07-CTF-Writeups/`](./07-CTF-Writeups) | Original CTF write-ups |
-| [`08-Projects/`](./08-Projects) | Original security tooling and detection content |
-| [`11-Resources/`](./11-Resources) | Reference material — Splunk SPL, KQL, MITRE ATT&CK, tool guides |
+This repository is **portfolio output only** — the work, not the prep. Everything here represents completed, defensible work.
+
+| Path | What's inside |
+|------|--------------|
+| 🚩 [`07-CTF-Writeups/`](./07-CTF-Writeups) | Completed CTF write-ups — HackTheBox, TryHackMe, CyberDefenders. Each mapped to MITRE ATT&CK. |
+| 🛠️ [`08-Projects/`](./08-Projects) | Original security tooling — Python, Bash, PowerShell. IOC extractors, audit scripts, detection rules. |
+| 📚 [`11-Resources/`](./11-Resources) | Curated reference — Splunk SPL, KQL, MITRE ATT&CK quick references built from working notes. |
+| 📝 [`Templates/`](./Templates) | Methodology — the templates I use for consistent CTF / phishing / vuln-report documentation. |
 
 ---
 
