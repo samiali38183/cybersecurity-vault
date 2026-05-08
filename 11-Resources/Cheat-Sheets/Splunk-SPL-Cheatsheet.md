@@ -55,4 +55,4 @@ index=windows EventCode=4688 New_Process_Name="*powershell*"
 | table _time, host, user, Command_Line
 ```
 
-## Add your own searches below as you learn them
+

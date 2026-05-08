@@ -1,4 +1,11 @@
-# Weekly Review — Week of [Date]
+---
+type: weekly-review
+week-of: <% tp.date.now("YYYY-MM-DD") %>
+tags: [weekly-review]
+total-hours:
+---
+
+# Weekly Review — Week of <% tp.date.now("YYYY-MM-DD") %>
 
 ## What I Studied This Week
 - 
@@ -9,12 +16,12 @@
 ## Hours Logged
 | Category | Hours |
 |----------|-------|
-| Cert study | |
-| Hands-on labs | |
-| CTF / HTB | |
-| Project work | |
-| Career prep | |
-| **Total** | |
+| Cert study |  |
+| Hands-on labs |  |
+| CTF / HTB |  |
+| Project work |  |
+| Career prep |  |
+| **Total** |  |
 
 ## What Clicked This Week
 Something that finally made sense or a skill that leveled up.
@@ -29,4 +36,4 @@ Be honest. What are you still unclear on?
 
 ## LinkedIn / GitHub Activity
 - Posted: Y/N — topic:
-- GitHub commits: 
+- GitHub commits:

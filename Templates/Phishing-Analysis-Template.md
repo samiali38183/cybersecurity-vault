@@ -1,66 +1,75 @@
-# Phishing Analysis: [Sample Name/ID]
+---
+type: phishing-analysis
+sample-id:
+source:
+verdict:
+date-analyzed: <% tp.date.now("YYYY-MM-DD") %>
+status: in-progress
+tags: [phishing, analysis, emailsecurity]
+iocs: []
+mitre-techniques: [T1566]
+---
 
-**Date Analyzed:**  
-**Source:** OpenPhish / LetsDefend / Real Sample  
-**Verdict:** Malicious / Benign / Suspicious  
-**Tags:** #phishing #analysis #emailsecurity
+# Phishing Analysis: <% tp.file.title %>
+
+> **Source:** | **Verdict:** | **Date Analyzed:**
 
 ---
 
 ## Email Metadata
 | Field | Value |
 |-------|-------|
-| From (Display) | |
-| From (Actual) | |
-| Reply-To | |
-| Subject | |
-| Date | |
-| Message-ID | |
+| From (Display) |  |
+| From (Actual) |  |
+| Reply-To |  |
+| Subject |  |
+| Date |  |
+| Message-ID |  |
 
 ---
 
 ## Header Analysis
-### Received Chain (trace the hops)
+### Received Chain
 Paste sanitized header trace here.
 
 ### Authentication Results
 | Check | Result | Notes |
 |-------|--------|-------|
-| SPF | Pass / Fail / None | |
-| DKIM | Pass / Fail / None | |
-| DMARC | Pass / Fail / None | |
+| SPF |  |  |
+| DKIM |  |  |
+| DMARC |  |  |
 
 ---
 
 ## URL Analysis
-| URL | VirusTotal Result | URLScan Result | Verdict |
-|-----|-------------------|----------------|---------|
-| | | | |
+| URL | VirusTotal | URLScan | Verdict |
+|-----|-----------|---------|---------|
+|     |           |         |         |
 
 ---
 
 ## Attachment Analysis
-| Filename | Hash (MD5/SHA256) | Any.run Result | Verdict |
-|----------|-------------------|----------------|---------|
-| | | | |
+| Filename | Hash (SHA256) | Any.run | Verdict |
+|----------|---------------|---------|---------|
+|          |               |         |         |
 
 ---
 
 ## IOCs Extracted
 | Type | Value | Confidence |
 |------|-------|------------|
-| IP | | |
-| Domain | | |
-| URL | | |
-| Hash | | |
-| Email | | |
+| IP   |       |            |
+| Domain |     |            |
+| URL  |       |            |
+| Hash |       |            |
+| Email |      |            |
 
 ---
 
 ## MITRE ATT&CK Mapping
 | Technique | ID | Tactic |
 |-----------|-----|--------|
-| Phishing | T1566 | Initial Access |
+| Phishing  | T1566 | Initial Access |
 
 ---
 

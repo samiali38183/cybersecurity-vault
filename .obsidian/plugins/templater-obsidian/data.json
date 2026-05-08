@@ -1,0 +1,20 @@
+﻿{
+  "templates_folder": "Templates",
+  "templates_pairs": [["", ""]],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {"folder": "07-CTF-Writeups/HackTheBox", "template": "Templates/CTF-Writeup-Template"},
+    {"folder": "07-CTF-Writeups/TryHackMe", "template": "Templates/CTF-Writeup-Template"},
+    {"folder": "03-Phase-6-12-Specialization/Phishing-Analysis", "template": "Templates/Phishing-Analysis-Template"},
+    {"folder": "00-Dashboard/Daily-Notes", "template": "Templates/Daily-Note-Template"}
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [""],
+  "startup_templates": [""]
+}

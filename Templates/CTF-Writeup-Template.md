@@ -1,10 +1,19 @@
-# CTF Write-Up: [Machine/Challenge Name]
+---
+type: ctf-writeup
+platform:
+machine:
+difficulty:
+category:
+status: in-progress
+date-started: <% tp.date.now("YYYY-MM-DD") %>
+date-completed:
+tags: [ctf, writeup]
+mitre-techniques: []
+---
 
-**Platform:** HackTheBox / TryHackMe / CyberDefenders  
-**Difficulty:** Easy / Medium / Hard  
-**Category:** Linux / Windows / Web / Forensics / Cloud  
-**Date Completed:**  
-**Tags:** #writeup #htb #web #linux
+# CTF Write-Up: <% tp.file.title %>
+
+> **Platform:** | **Difficulty:** | **Category:** | **Date Completed:**
 
 ---
 
@@ -34,13 +43,13 @@ Step by step. Include commands. Include relevant output.
 ---
 
 ## Privilege Escalation
-What path did you take? What tool identified it (LinPEAS/WinPEAS/manual)?
+What path did you take? What tool identified it (LinPEAS / WinPEAS / manual)?
 
 ---
 
 ## Flags
-- User flag: obtained ✅
-- Root flag: obtained ✅
+- [ ] User flag
+- [ ] Root flag
 
 ---
 
@@ -54,10 +63,14 @@ What path did you take? What tool identified it (LinPEAS/WinPEAS/manual)?
 ## MITRE ATT&CK Mapping
 | Technique | ID | Tactic |
 |-----------|-----|--------|
-| | | |
+|           |    |        |
 
 ---
 
 ## Tools Used
 - 
+
+---
+
+## Related Notes
 - 

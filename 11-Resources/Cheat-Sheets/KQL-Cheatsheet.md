@@ -47,4 +47,4 @@ SecurityEvent
 | project TimeGenerated, Account, SubjectAccount, Computer
 ```
 
-## Add your own queries below
+
