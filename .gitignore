@@ -18,30 +18,54 @@
 05-Certifications/
 06-Labs-and-Platforms/
 
-# ── Obsidian internal state ──
+# ── Python practice / scratch / learning (NOT portfolio) ──
+08-Projects/Python-Practice/
+08-Projects/*/scratch/
+08-Projects/*/notes-private/
+
+# ── Secrets / credentials — NEVER commit these ANYWHERE ──
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*secret*
+config.local.*
+
+# ── Python runtime / build artifacts (any project, anywhere) ──
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# ── IDE / editor state ──
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Jupyter / data ──
+.ipynb_checkpoints/
+
+# ── Obsidian internal state (personal, not portable) ──
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
-.obsidian/cache
+.obsidian/cache/
 
 # ── OS junk ──
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# ── Temp ──
-*.tmp
-*.log
-
-# ── Obsidian workspace settings (personal, not portable) ──
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
-
-# ── OS files ──
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# ── Temp files ──
+# ── Temp / logs ──
 *.tmp
 *.log
