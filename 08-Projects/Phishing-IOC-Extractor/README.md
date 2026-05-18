@@ -36,7 +36,50 @@ python main.py ../samples/sample_phishing.txt --pretty
 python main.py ../samples/sample_phishing.txt --pretty -o report.json
 ```
 
-## Sample output
+## Demo
+
+A live run against the included `sample_phishing.txt` fake phishing email:
+
+```console
+PS C:\Users\samis\Documents\cybersecurity-vault\08-Projects\Phishing-IOC-Extractor\src> python main.py ..\samples\sample_phishing.txt --pretty
+{
+  "ips": [
+    "192.168.1.100",
+    "203.0.113.45"
+  ],
+  "domains": [
+    "evil-domain.org",
+    "example.com",
+    "malicious-cdn.evil",
+    "payload.exe",
+    "paypa1-fake.com"
+  ],
+  "urls": [
+    "http://paypa1-fake.com/login",
+    "https://malicious-cdn.evil/payload.exe"
+  ],
+  "emails": [
+    "help@evil-domain.org",
+    "paypal-security@paypa1-fake.com",
+    "victim@example.com"
+  ],
+  "hashes": {
+    "md5": [
+      "5d41402abc4b2a76b9719d911017c592"
+    ],
+    "sha1": [
+      "aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d"
+    ],
+    "sha256": [
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
+  }
+}
+```
+
+One command in, structured IOC report out. Ready for downstream enrichment (VirusTotal lookups, threat intel correlation, blocklist generation).
+
+## Sample output (compact reference)
 
 ```json
 {
