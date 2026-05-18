@@ -1,0 +1,27 @@
+From: paypal-security@paypa1-fake.com
+To: victim@example.com
+Subject: Urgent - Account Suspended
+
+Dear Customer,
+
+Your PayPal account has been suspended due to suspicious activity.
+Click the link below to verify your identity:
+
+http://paypa1-fake.com/login
+Or visit our backup verification portal: https://malicious-cdn.evil/payload.exe
+
+Our security servers detected access attempts from:
+192.168.1.100
+203.0.113.45
+
+If you did not authorize these, contact our team immediately at help@evil-domain.org.
+
+Attached executable hash for verification:
+MD5: 5d41402abc4b2a76b9719d911017c592
+SHA1: aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
+SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+Failure to verify within 24 hours will result in permanent account closure.
+
+Regards,
+PayPal Security Team
