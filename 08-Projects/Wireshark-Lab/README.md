@@ -76,9 +76,11 @@ The foundation of every TCP connection: **SYN → SYN/ACK → ACK.**
 
 ### Scenario 5 — ARP & Local Network Mapping
 - **Filter:** `arp`
-- **What to observe:** "Who has 192.168.56.10? Tell 192.168.56.20" requests and replies. Multiple replies for one IP, or rapid ARP announcements, can indicate **ARP spoofing** (a man-in-the-middle technique, MITRE ATT&CK T1557.002).
+- **What to observe:** ARP resolves an IP to a MAC on the local network using request/reply pairs. In this capture, the gateway `10.0.0.1` repeatedly asks **"Who has 10.0.0.34? Tell 10.0.0.1"** and the host at `10.0.0.34` replies **"10.0.0.34 is at 5c:fb:3a:19:19:33"** — the same machine and MAC seen across the DNS, TCP, and TLS captures above. Unanswered broadcast requests for `10.0.0.159` are also visible — that host is offline. **Defender note:** ARP is trust-by-default, which is why ARP spoofing works. Two replies for one IP, or sudden MAC changes for a known host, are the classic indicators of a man-in-the-middle (**MITRE ATT&CK T1557.002 — ARP Cache Poisoning**).
 
-<!-- SCREENSHOT: Wireshark ARP request/reply → screenshots/05-arp.png -->
+![ARP request/reply pairs captured in Wireshark](screenshots/05-arp.png)
+
+*Live capture filtered to `arp`: the gateway (`10.0.0.1`) asking "Who has 10.0.0.34?" and the host at `10.0.0.34` replying with MAC `5c:fb:3a:19:19:33`. Broadcast requests for `10.0.0.159` go unanswered (host offline). The detail pane shows the Address Resolution Protocol (request) layer of the selected frame.*
 
 ### Scenario 6 — Port Scan Signature
 Captured an Nmap scan from a second host to see what reconnaissance looks like on the wire.
