@@ -55,10 +55,12 @@ The foundation of every TCP connection: **SYN → SYN/ACK → ACK.**
 <!-- SCREENSHOT: Wireshark DNS query + response pair → screenshots/02-dns-query.png -->
 
 ### Scenario 3 — HTTP Request Analysis
-- **Filter:** `http.request`
-- **What to observe:** The full request — method, host, URI, User-Agent. HTTP is cleartext, so credentials in a POST are fully visible. Suspicious User-Agents (e.g., `python-requests`, `curl`, custom strings) can flag automated tooling.
+- **Filter:** `http`
+- **What to observe:** The full request — method, host, URI, User-Agent. HTTP is cleartext, so the request line (`GET / HTTP/1.1`) and the server's `200 OK` response are fully visible in the packet list, and the detail pane shows the parsed Hypertext Transfer Protocol layer. Because nothing is encrypted, an analyst can read everything — which is exactly why credentials sent over plain HTTP are a finding.
 
-<!-- SCREENSHOT: Wireshark HTTP GET request with headers expanded → screenshots/03-http-request.png -->
+![HTTP request and response captured in Wireshark](screenshots/03-http-request.png)
+
+*Live capture: a `GET / HTTP/1.1` request (packet 4199) and its `HTTP/1.1 200 OK (text/html)` response, with the Hypertext Transfer Protocol layer expanded in the detail pane.*
 
 ### Scenario 4 — TLS Handshake (what's visible when encrypted)
 - **Filter:** `tls.handshake.type == 1` (Client Hello)
