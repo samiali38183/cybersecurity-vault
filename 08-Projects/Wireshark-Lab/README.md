@@ -50,9 +50,11 @@ The foundation of every TCP connection: **SYN → SYN/ACK → ACK.**
 
 ### Scenario 2 — DNS Query & Response
 - **Filter:** `dns`
-- **What to observe:** Query (type A) for a hostname, response with the resolved IP. Watch for unusually long subdomains (possible DNS tunneling) or high-frequency lookups to one domain (possible C2 beaconing).
+- **What to observe:** Each lookup is a **query / response pair** sharing the same transaction ID. In this capture, the host `10.0.0.34` sends an **A-record query (transaction `0xd0c5`) for `api.anthropic.com`** to the resolver `75.75.75.75`, and the matching response (same `0xd0c5`) returns the resolved address **`160.79.104.10`**. Both A (IPv4) and AAAA (IPv6) queries are visible across the capture. For a defender, this is where DNS tunneling (abnormally long/random subdomains) and C2 beaconing (high-frequency lookups to one domain on a fixed interval) would stand out against normal resolution traffic.
 
-<!-- SCREENSHOT: Wireshark DNS query + response pair → screenshots/02-dns-query.png -->
+![DNS query and response pairs captured in Wireshark](screenshots/02-dns-query.png)
+
+*Live capture filtered to `dns`: multiple query/response pairs to the resolver `75.75.75.75`. Selected packet is an A-record query (`0xd0c5`) for `api.anthropic.com`; the matching response resolves it to `160.79.104.10`. Transaction IDs let you pair each query with its response.*
 
 ### Scenario 3 — HTTP Request Analysis
 - **Filter:** `http`
