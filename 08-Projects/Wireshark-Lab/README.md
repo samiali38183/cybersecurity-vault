@@ -44,9 +44,11 @@ The Wireshark display filters I used and reference most:
 The foundation of every TCP connection: **SYN → SYN/ACK → ACK.**
 
 - **Filter:** `tcp.flags.syn == 1`
-- **What to observe:** Client sends SYN, server replies SYN/ACK, client sends ACK. A flood of SYNs with no completion = scan or SYN flood.
+- **What to observe:** This filter isolates the first two legs of the TCP three-way handshake. A `[SYN]` packet is the client opening a connection; a `[SYN, ACK]` is the server agreeing. In this capture, host `10.0.0.34` sends `59915 → 443 [SYN]` to `160.79.104.10` — the same address `api.anthropic.com` resolved to in the DNS capture above, so you can watch the flow go DNS lookup → TCP connection to that IP. The servers respond with `[SYN, ACK]` on port 443 (HTTPS). The SYN packets advertise TCP options — Maximum Segment Size (MSS), Window Size (WS), and SACK_PERM. **Defender note:** a flood of `[SYN]` packets with no matching `[SYN, ACK]` or final `[ACK]` is the signature of a SYN scan or SYN flood.
 
-<!-- SCREENSHOT: Wireshark showing the 3 handshake packets → screenshots/01-tcp-handshake.png -->
+![TCP SYN and SYN-ACK handshake packets captured in Wireshark](screenshots/01-tcp-handshake.png)
+
+*Live capture filtered to `tcp.flags.syn == 1`: `[SYN]` packets (client opening connections) and `[SYN, ACK]` responses (servers agreeing) — legs 1 and 2 of the three-way handshake, all to port 443. The final `[ACK]` leg is filtered out here because it carries no SYN flag. Connection to `160.79.104.10` follows the earlier DNS resolution of `api.anthropic.com`.*
 
 ### Scenario 2 — DNS Query & Response
 - **Filter:** `dns`
