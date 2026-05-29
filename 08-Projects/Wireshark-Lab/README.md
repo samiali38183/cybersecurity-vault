@@ -68,9 +68,11 @@ The foundation of every TCP connection: **SYN → SYN/ACK → ACK.**
 
 ### Scenario 4 — TLS Handshake (what's visible when encrypted)
 - **Filter:** `tls.handshake.type == 1` (Client Hello)
-- **What to observe:** Even though the payload is encrypted, the **Server Name Indication (SNI)** reveals the destination domain, and the certificate exchange shows the server's identity. This is how defenders gain visibility into HTTPS without decryption.
+- **What to observe:** A TLS session opens with a Client Hello. Even though the rest of the session is encrypted, the **Server Name Indication (SNI)** field travels in cleartext and reveals the destination domain — Wireshark surfaces it right in the Info column. In this capture the SNI values are plainly readable: `activity.windows.com`, `doh.xfinity.com`, `relaxedslowbeautifulday.neverssl.com`, `v20.events.data.microsoft.com`, `o.clarity.ms`, and `api.anthropic.com`. This is how a defender gains destination visibility into HTTPS traffic without ever decrypting it — the basis of SNI-based monitoring and filtering.
 
-<!-- SCREENSHOT: Wireshark TLS Client Hello showing SNI → screenshots/04-tls-handshake.png -->
+![TLS Client Hello packets with SNI visible in Wireshark](screenshots/04-tls-handshake.png)
+
+*Live capture filtered to `tls.handshake.type == 1` (Client Hello). The selected packet shows `SNI=activity.windows.com` (TLSv1.3). Multiple destinations are identifiable purely from the cleartext SNI field. Note the `api.anthropic.com` Client Hellos go to `160.79.104.10` — the same address resolved in the DNS capture and connected to in the TCP handshake above, showing the full DNS → TCP → TLS flow for one connection.*
 
 ### Scenario 5 — ARP & Local Network Mapping
 - **Filter:** `arp`
