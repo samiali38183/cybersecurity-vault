@@ -65,11 +65,6 @@ $ python main.py sample_phishing.txt --pretty
 
 Operating on the CBP Vulnerability Assessment Team supporting federal-scale vulnerability management operations. Hands-on with enterprise scanning, CVSS-based triage, and remediation tracking workflows in a federal cybersecurity environment.
 
-### IT Support · Heavenly Touch Homecare
-Fairfax, VA · May 2024 – Present
-
-Endpoint and network support for a healthcare operations team — workstation provisioning, user access management, hardware and connectivity troubleshooting.
-
 ---
 
 ## 🎓 Education
