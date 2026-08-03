@@ -6,7 +6,8 @@
 
 [![Security+](https://img.shields.io/badge/CompTIA%20Security%2B-Certified-E2231A?style=for-the-badge&logo=comptia&logoColor=white)](https://www.comptia.org/certifications/security)
 [![AWS CCP](https://img.shields.io/badge/AWS%20Cloud%20Practitioner-Certified-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/certification/certified-cloud-practitioner/)
-[![Network+](https://img.shields.io/badge/CompTIA%20Network%2B-In%20Progress-lightgrey?style=for-the-badge&logo=comptia&logoColor=white)](https://www.comptia.org/certifications/network)
+[![AWS SAA](https://img.shields.io/badge/AWS%20Solutions%20Architect%20%E2%80%93%20Associate-In%20Progress-lightgrey?style=for-the-badge&logo=amazonaws&logoColor=white)](https://aws.amazon.com/certification/certified-solutions-architect-associate/)
+[![CySA+](https://img.shields.io/badge/CompTIA%20CySA%2B-In%20Progress-lightgrey?style=for-the-badge&logo=comptia&logoColor=white)](https://www.comptia.org/certifications/cybersecurity-analyst)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sami-ali-1a4b89345)
 
@@ -68,8 +69,8 @@ Hands-on packet analysis across five protocol scenarios captured live on a perso
 
 - **CompTIA Security+** (DoD 8570 approved)
 - **AWS Certified Cloud Practitioner**
-- **CompTIA Network+** *(in progress)*
-- **CompTIA CySA+** *(planned)*
+- **AWS Solutions Architect – Associate** *(in progress)*
+- **CompTIA CySA+** *(in progress)*
 
 **Clearance:** CBP Full Background Investigation (BI) — Active · U.S. Citizen
 
